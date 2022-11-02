@@ -66,3 +66,27 @@ blockquote {
 	- https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
 */
 
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	grid-template-rows: repeat(20, 1fr) ;
+	
+}
+
+header, p, blockquote, h2, footer {
+	grid-column: 2 / 3;
+}
+
+.tip-vlevo {
+	grid-column: 1 / 2;
+}
+
+
+figure {
+	grid-column: 1 / -1;
+}
+
+.tip-vpravo {
+	grid-column: 3 / 4;
+}
+

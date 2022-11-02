@@ -68,21 +68,46 @@ blockquote {
 
 .blog {
 	display: grid;
+	gap: 0 40px;
 	grid-template-columns: 1fr 4fr 2fr;
-	grid-template-rows: repeat(20, 1fr) ;
+	grid-template-rows: repeat(20, auto);
 	
 }
 
-header, p, blockquote, h2, footer {
-	grid-column: 2 / 3;
+h1 {
+	font-size: 60px;
+	color: var(--zelena);
+
 }
+
+header, p, h2, footer {
+	grid-column: 2 / 3;
+	align-self: end;
+}
+
+header p {
+	margin-bottom: 0;
+}
+blockquote {
+	justify-self: center;
+}
+
+.tip {
+	font-size: 16px;
+	padding: 20px; 
+	
+}
+
 
 .tip-vlevo {
 	grid-column: 1 / 2;
+	text-align: right;
 }
 
-
 figure {
+	margin: 0;
+}
+figure, blockquote  {
 	grid-column: 1 / -1;
 }
 
@@ -90,3 +115,15 @@ figure {
 	grid-column: 3 / 4;
 }
 
+img {
+	width: 100%;
+}
+
+.meta {
+	color: var(--seda);
+	margin-top: 50px
+}
+
+figcaption {
+	color: var(--seda);
+}

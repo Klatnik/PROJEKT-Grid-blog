@@ -81,7 +81,6 @@ h1 {
 	font-size: 90px;
 	margin-top: 30px;
 	margin-bottom: 80px;
-
 }
 
 h2 {
@@ -119,30 +118,38 @@ blockquote::after, blockquote::before {
 
 }
 
-.tip p {
+/* .tip p {
 	margin: 0;
 	background-color: var(--svetla);
 	padding: 20px; 
-}
+} */
 
 
 .tip {
 	font-size: 16px;
+	display: inline-block;
+	background-color: var(--svetla);
+	padding: 20px;
+	height: min-content;
+}
+
+.tip a {
+	color: var(--zluta)
+}
+
+.tip-vlevo p {
+	margin-top: 10px;
 }
 
 .tip-vlevo {
 	grid-column: 1 / 2;
 	text-align: right;
-	
-}
-
-.tip-vlevo img {
-	padding: 20px; 
-	background-color: var(--svetla);
+	border-right: 2px solid var(--zluta)
 }
 
 .tip-vpravo {
 	grid-column: 3 / 4;
+	border-left: 2px solid var(--zluta)
 }
 
 figure {

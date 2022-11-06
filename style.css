@@ -135,10 +135,11 @@ blockquote::after, blockquote::before {
 
 .tip a {
 	color: var(--zluta)
+	
 }
 
 .tip-vlevo p {
-	margin-top: 10px;
+	margin: 10px 0 0 0;
 }
 
 .tip-vlevo {
@@ -149,7 +150,11 @@ blockquote::after, blockquote::before {
 
 .tip-vpravo {
 	grid-column: 3 / 4;
-	border-left: 2px solid var(--zluta)
+	border-left: 2px solid var(--zluta);
+}
+
+.tip-vpravo p {
+	margin: 0;
 }
 
 figure {

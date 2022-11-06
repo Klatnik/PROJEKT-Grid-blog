@@ -70,7 +70,6 @@ blockquote {
 	display: grid;
 	gap: 0 40px;
 	grid-template-columns: 1fr 4fr 2fr;
-	/* grid-template-rows: repeat(20, auto); */
 	
 }
 
@@ -106,23 +105,45 @@ blockquote {
 	color: var(--seda);
 	font-size: 36px;
 	margin-top: 0;
+}
+
+blockquote::after, blockquote::before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 130px;
+	background-color: var(--limetka);
+	margin: 20px auto;
 
 }
+
+.tip p {
+	margin: 0;
+	background-color: var(--svetla);
+	padding: 20px; 
+}
+
 
 .tip {
 	font-size: 16px;
-	padding: 20px; 
-	
 }
+
+
 
 
 .tip-vlevo {
 	grid-column: 1 / 2;
 	text-align: right;
+	
 }
 
 .tip-vlevo img {
-	width: 90%;
+	padding: 20px; 
+	background-color: var(--svetla);
+}
+
+.tip-vpravo {
+	grid-column: 3 / 4;
 }
 
 figure {
@@ -134,9 +155,7 @@ figure, blockquote  {
 	grid-column: 1 / -1;
 }
 
-.tip-vpravo {
-	grid-column: 3 / 4;
-}
+
 
 img {
 	width: 100%;
